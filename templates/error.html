@@ -1,0 +1,20 @@
+{{ define "error" }}
+
+    {{ template "header" }}
+
+    <main role="main" class="px-3">
+
+        <br>
+        <div class="alert alert-success">
+            <h2 class="text-danger"> Ошибка</h2>
+            <p class="text-danger"> Добавлять статьи может только создатель. </p>
+        </div>
+
+        <p class="lead">
+            <a href="/" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Назад</a>
+        </p>
+    </main>
+
+    {{ template "footer" }}
+
+{{ end }}

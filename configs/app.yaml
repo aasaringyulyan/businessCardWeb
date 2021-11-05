@@ -1,0 +1,7 @@
+dbHost: 127.0.0.1
+dbPort: :3306
+user: root
+
+port: :8030
+
+password: steamPort

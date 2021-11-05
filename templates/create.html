@@ -1,0 +1,22 @@
+{{ define "create" }}
+
+    {{ template "header" }}
+
+    <main role="main" class="px-3">
+        <br>
+        <h1 class="cover-heading">Добавить статью</h1>
+        <form action="/save_article" method="post">
+            <label for="title"></label><input type="text" name="title" id="title" placeholder="Название"
+                                              class="form-control">
+            <label for="path"></label><input name="path" id="path" class="form-control" placeholder="Ссылка">
+            <label for="password"></label><input name="password" id="password" class="form-control"
+                                                 placeholder="Пароль"><br>
+            <p class="lead">
+                <button class="btn btn-lg btn-secondary fw-bold border-white bg-white"> Добавить</button>
+            </p>
+        </form>
+    </main>
+
+    {{ template "footer" }}
+
+{{ end }}

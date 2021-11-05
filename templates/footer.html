@@ -1,0 +1,22 @@
+{{ define "footer" }}
+
+    <footer class="mt-auto text-white-50">
+        <div class="inner">
+            <p><a href="https://t.me/KatawaS" class="text-white">Telegram</a></p>
+        </div>
+    </footer>
+    </div>
+    <script type="text/javascript">
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('a');
+        const menuLength = menuItem.length
+        for (let i = 0; i < menuLength; i++) {
+            if (menuItem[i].href === currentLocation) {
+                menuItem[i].className = "nav-link active"
+            }
+        }
+    </script>
+    </body>
+    </html>
+
+{{ end }}
